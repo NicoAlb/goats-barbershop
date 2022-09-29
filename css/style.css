@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(../fonts/MerriweatherSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+a {
+    text-decoration: none;
+    color: #1c0c04;
+    padding-right: 20px;
+}
+
+a:hover {
+    color: #7a4518;
+}
+
+p {
+    font-size: 2rem;
+    font-family: "Merriweather";
+    color: bisque;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-family: "Lobster";
+    color: bisque;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "Merriweather";
+    color: bisque;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: "Merriweather";
+    color: bisque;
+}
+
+h4 {
+    font-size: 2rem;
+    font-family: "Merriweather";
+    color: bisque;
+}
+
+table {
+    font-size: 2rem;
+    font-family: "Merriweather";
+    color: bisque;
+    width: 100%;
+}
+
+th, td {
+    border: solid 3px #1c0c04;
+    background-color: #1c0c04;
+    text-align: center;
+}
+
+form {
+    font-size: 2.5rem;
+    font-family: "Merriweather";
+    color: bisque;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 4rem;
+    padding-right: 50px;
+}
+
+footer {
+    background-color: bisque;
+}
+
+nav p {
+    color: #1c0c04;
+}
+
+header {
+    background-color: bisque;
+    padding: 1rem 2rem 2rem 5rem;
+    max-width: 2000px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    font-size: 3.5rem;
+    font-family: "Lobster";
+}
+
+/*CLASES*/
+
+.navBar {
+    padding: 3rem 5rem 2rem 2rem;
+}
+
+.banner {
+    background-image: url(../assets/img/banner.jpg);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.sectionOsc {
+    background-color: #1c0c04;
+    padding: 5rem 5rem;
+}
+
+.sectionCla {
+    background-color: #7a4518;
+    padding: 5rem 5rem;
+}
+
+.sectionClara {
+    background-color: #7a4518;
+    padding: 5rem 5rem;
+    display: flex;
+}
+
+.sectionOscura {
+    background-color: #1c0c04;
+    padding: 5rem 5rem;
+    display: flex;
+}
+
+.modeloClaro {
+    background-color: #7a4518;
+    padding: 5rem 5rem;
+    text-align: center;
+}
+
+.modeloOscuro {
+    background-color: #1c0c04;
+    padding: 5rem 5rem;
+    text-align: center;
+}
+
+.imgAlineada {
+    padding: 1rem 1rem;
+}
+
+.textoDerecha {
+    text-align: right;
+    text-align: left;
+    padding: 3rem 0rem 3rem 7rem;
+}
+
+.textoIzq {
+    text-align: left;
+    padding: 3rem 7rem 3rem 0rem;
+}
+
+.sectionMap {
+    background-color: #1c0c04;
+    padding: 5rem 5rem;
+}
+
+.tituloMap {
+    text-align: left;
+    padding: 1rem 0rem 5rem 1rem;
+}
+
+.map {
+    text-align: center;
+}
+
+.botonOscuro {
+    width: 200px;
+    font-family: "Merriweather";
+    background-color: #1c0c04;
+    color: bisque;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botonClaro {
+    width: 200px;
+    font-family: "Merriweather";
+    background-color: #7a4518;
+    color: bisque;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.textCentrado {
+    text-align: center;
+    background-color: #7a4518;
+    width: 300px;
+    padding: 2rem 1rem;
+    margin: 4rem 0rem 4rem 6rem;
+}
+
+.formTurnos {
+    text-align: center;
+    background-color: #7a4518;
+    width: 450px;
+    padding: 7rem 4rem;
+    margin: 4rem 0rem 4rem 15rem;
+}
+
+.formContacto {
+    background-color: #1c0c04;
+    padding: 5rem 5rem;
+}
