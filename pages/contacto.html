@@ -7,45 +7,41 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header id="header">
+    <header>
         <div>
             <a href="../index.html"><img src="../assets/img/logogoatsfinal.png" width="230"></a>
         </div>
         <nav class="navBar">
-            <a href="../pages/nosotros.html" class="nav-link">Nosotros</a>
-            <a href="../pages/modelos.html" class="nav-link">Modelos</a>
-            <a href="../pages/turnos.html" class="nav-link">Turnos</a>
-            <a href="../pages/contacto.html" class="nav-link">Contacto</a>
+            <a href="../pages/nosotros.html">Nosotros</a>
+            <a href="../pages/modelos.html">Modelos</a>
+            <a href="../pages/turnos.html">Turnos</a>
+            <a href="../pages/contacto.html">Contacto</a>
         </nav>
     </header>
     <main>
-        <section class="formContacto">
-            <article>
-                <h2>Contactanos</h2>
-            </article>
-            <br>
-            <article>
+        <section class="boxContacto gridContacto">
+            <h2 class="hContactanos">Contactanos</h2>
+            <div class="gridForm">
                 <form action="/formulario" method="get">
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <input class="casilla" type="text" id="nombre" name="nombre" placeholder=" Nombre ">
                     <br>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                    <input class="casilla" type="text" id="apellido" name="apellido" placeholder=" Apellido ">
                     <br>
-                    <input type="email" id="email" name="email" placeholder="E-mail">
+                    <input class="casilla" type="email" id="email" name="email" placeholder=" E-mail ">
                     <br>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Número de telefono">
-                    <br>
+                    <input class="casilla" type="tel" id="telefono" name="telefono" placeholder=" Número de telefono ">
                 </form>
-            </article>
+            </div>
             <br>
-            <article>
-                <textarea name="mensaje" id="mensaje" placeholder="Dejanos tu mensaje..." cols="30" rows="10"></textarea>
+            <div class="gridTextArea">
+                <textarea class="casillaText" name="mensaje" id="mensaje" placeholder=" Dejanos tu mensaje... " cols="120" rows="10"></textarea>
                 <br>
-                <input class="botonClaro" type="submit" value="Enviar mensaje">
-            </article>
+                <input class="botonClaro marginBoton" type="submit" value="Enviar">
+            </div>
         </section>
     </main>
     <footer>

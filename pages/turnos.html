@@ -7,19 +7,19 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="../css/style.css">
     <title>Turnos</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header id="header">
+    <header>
         <div>
             <a href="../index.html"><img src="../assets/img/logogoatsfinal.png" width="230"></a>
         </div>
         <nav class="navBar">
-            <a href="../pages/nosotros.html" class="nav-link">Nosotros</a>
-            <a href="../pages/modelos.html" class="nav-link">Modelos</a>
-            <a href="../pages/turnos.html" class="nav-link">Turnos</a>
-            <a href="../pages/contacto.html" class="nav-link">Contacto</a>
+            <a href="../pages/nosotros.html">Nosotros</a>
+            <a href="../pages/modelos.html">Modelos</a>
+            <a href="../pages/turnos.html">Turnos</a>
+            <a href="../pages/contacto.html">Contacto</a>
         </nav>
     </header>
     <main>
@@ -38,30 +38,36 @@
                     <p>De 15:00 a 21:30</p>
                 </article>
                 <br>
-                <article style="text-align: center;">
+                <article class="textSoloCentrado">
                     <p>Tener en cuenta los horarios de atención <br> antes de consultar disponibilidad</p>
                 </article>
             </div>
             <br>
             <div class="formTurnos">
                 <form>
-                    <label for="barbero">Elegí tu barbero</label>
-                    <select name="barbero" id="barbero">
-                        <option value="nicolasGodoy">Nicolás Godoy</option>
-                        <option value="enzoDiaz">Enzo Diaz</option>
-                        <option value="julianBlanco">Julián Blanco</option>
-                    </select>
-                    <br>
-                    <label for="diaHora">Elegí día y hora</label>
-                    <input type="datetime-local" id="diaHora" name="diaHora">
-                    <br>
-                    <label for="email">Tu correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="example@example.com">
-                    <br>
-                    <label for="numeroDeTelefono">Tu número de telefono</label>
-                    <input type="tel" id="numeroDeTelefono" name="numeroDeTelefono" placeholder="0000000000">
-                    <br>
-                    <input class="botonOscuro" type="submit" value="Consultá disponibilidad">
+                    <div>
+                        <label for="barbero">Elegí tu barbero</label>
+                        <select name="barbero" id="barbero">
+                            <option value="nicolasGodoy">Nicolás Godoy</option>
+                            <option value="enzoDiaz">Enzo Diaz</option>
+                            <option value="julianBlanco">Julián Blanco</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="diaHora">Elegí día y hora</label>
+                        <input type="datetime-local" id="diaHora" name="diaHora">
+                    </div>
+                    <div>
+                        <label for="email">Tu correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com">
+                    </div>
+                    <div>
+                        <label for="numeroDeTelefono">Tu número de telefono</label>
+                        <input type="tel" id="numeroDeTelefono" name="numeroDeTelefono" placeholder="0000000000">
+                    </div>
+                    <div>
+                        <input class="botonDisponibilidad" type="submit" value="Consultá disponibilidad">
+                    </div>
                 </form>
             </div>
         </section>
