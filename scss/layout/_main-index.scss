@@ -1,0 +1,85 @@
+.banner{
+    background-image: url(../assets/img/banner.jpg);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    h1 {
+        font-size: 4rem;
+        font-family: "Lobster";
+        color: #ffe4c4;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+.sectionBarberia {
+    background-color: #7a4518;
+    width: 100%;
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .textBarberia {
+        margin-top: 15px;
+    }
+}
+
+.imgBarberia {
+    padding: 1rem 1rem;
+    margin-top: 15px;
+    width: 550px;
+}
+
+.sectionEquipo {
+    background-color: #1c0c04;
+    width: 100%;
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .textEquipo {
+        margin-top: 50px;
+    }
+}
+
+.imgEquipo {
+    padding: 1rem 1rem;
+    margin-top: 15px;
+    width: 550px;
+}
+
+.sectionServicios {
+    background-color: #7a4518;
+    width: 100%;
+    padding: 5rem 5rem 5rem 4rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .botonReservaTurno {
+        width: 150px;
+        height: 35px;
+        font-family: "Merriweather";
+        font-size: 1.5rem;
+        background-color: #1c0c04;
+        color: #ffe4c4;
+        border-radius: 5px;
+        border: #1c0c04;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+}
+
+.sectionMap {
+    background-color: #1c0c04;
+    padding: 5rem 5rem;
+    .tituloMap {
+        text-align: left;
+        padding: 1rem 0rem 5rem 1rem;
+    }
+    .map {
+        text-align: center;
+    }
+}

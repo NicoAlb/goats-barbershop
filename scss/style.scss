@@ -1,0 +1,435 @@
+h2 {
+    font-size: 3rem;
+    font-family: "Merriweather";
+    color: #ffe4c4;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: "Merriweather";
+    color: #ffe4c4;
+}
+
+h4 {
+    font-size: 2rem;
+    font-family: "Merriweather";
+    color: #ffe4c4;
+}
+
+p {
+    font-size: 2rem;
+    font-family: "Merriweather";
+    color: #ffe4c4;
+}
+
+form {
+    font-size: 2.5rem;
+    font-family: "Merriweather";
+    color: #ffe4c4;
+}
+
+@import "./base/reset";
+
+@import "./base/tipografias";
+
+/*header*/
+@import "./layout/header";
+
+/*Index*/
+@import "./layout/main-index";
+
+/*Nosotros*/
+@import "./layout/main-nosotros";
+
+/*Modelos*/
+@import "./layout/main-modelos";
+
+/*Turnos*/
+@import "./layout/main-turnos";
+
+/*Contacto*/
+@import "./layout/main-contacto";
+
+/*Footer*/
+@import "./layout/footer";
+
+/*Grids*/
+.containerGrid {
+    display: grid;
+}
+
+.gridHeader {
+    grid-area: header;
+}
+
+.gridMain {
+    grid-area: main;
+}
+
+.gridFooter {
+    grid-area: footer;
+}
+
+/*media queries*/
+@media only screen and (max-width: 576px){
+    .containerGrid{
+        grid-template-columns: 100%;
+        grid-template-rows: 180px 1fr 130px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+    .banner {
+        background-image: url(../assets/img/banner.jpg);
+        height: 73vh;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(3,1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .imgNosotros{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .imgBarberia{
+        width: 100%;
+    }
+    .imgEquipo{
+        width: 100%;
+    }
+    header{
+        background-color: #ffe4c4;
+        width: 100%;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0px;
+        .logo{
+            margin-left: 75px;
+            margin-top: 10px;
+            width: 230px;
+        }
+        nav{
+            width: 100%;
+        }
+        .navBar{
+            display: flex;
+            align-items: center;
+            li{
+                list-style: none;
+                font-size: 2rem;
+                font-family: "Lobster";
+                margin: 10px;
+                padding-right: 5px;
+                a{
+                    text-decoration: none;
+                    color: #1c0c04;
+                    &:hover{
+                        color: #7a4518;
+                    }
+                }
+            }
+        }
+    }
+    .sectionServicios {
+        background-color: #7a4518;
+        width: 100%;
+        height: 1400px;
+        padding: 5rem 5rem 0rem 5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    footer nav {
+        background-color: #ffe4c4;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        align-items: center;
+        padding: 4rem 4rem 4rem 4rem;
+        height: 180px;
+        width: 100%;
+    }
+    .sectionTurno {
+        background-color: #1c0c04;
+        width: 100%;
+        padding: 5rem 5rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .sectionHorarios {
+        text-align: center;
+        background-color: #7a4518;
+        width: 300px;
+        margin: 3rem;
+    }
+    .formTurnos {
+        background-color: #7a4518;
+        width: 300px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 120px 120px 120px 50px;
+        padding: 4rem 4rem;
+        margin: 0px;
+        margin-top: 30px;
+    }
+    .elegiBarbero {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .selectBarbero {
+        background-color: #ffe4c4;
+        width: 150px;
+        height: 30px;
+        font-size: 1.5rem;
+        font-family: "Merriweather";
+        border: solid 2px #7a4518;
+        margin-top: 15px;
+    }
+    .elegiHorario {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .selectHorario {
+        background-color: #ffe4c4;
+        width: 170px;
+        height: 30px;
+        font-size: 1.5rem;
+        font-family: "Merriweather";
+        border: solid 2px #7a4518;
+        margin-top: 15px;
+    }
+    .correoElectronico {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .tuEmail {
+        background-color: #ffe4c4;
+        width: 200px;
+        height: 30px;
+        font-size: 1.5rem;
+        font-family: "Merriweather";
+        border: solid 2px #7a4518;
+        margin-top: 15px;
+    }
+    .numeroTelefono {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .tuNumero {
+        background-color: #ffe4c4;
+        width: 130px;
+        height: 30px;
+        font-size: 1.5rem;
+        font-family: "Merriweather";
+        border: solid 2px #7a4518;
+        margin-top: 15px;
+    }
+    .gridBotonDisp {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .sectionPrecios {
+        background-color: #7a4518;
+        text-align: center;
+        width: 100%;
+        height: 750px;
+        padding: 5rem 5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .boxContacto {
+        background-color: #1c0c04;
+        width: 100%;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .casillaText {
+        background-color: #ffe4c4;
+        font-family: "Merriweather";
+        font-size: 1.5rem;
+        border: solid 2px #7a4518;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        width: 200px;
+    }
+    .gridForm {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-right: 3rem;
+    }
+    .hContactanos {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        margin-left: 0px;
+    }
+    .marginBoton {
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1199px) {
+    .containerGrid{
+        grid-template-columns: 100%;
+        grid-template-rows: 130px 1fr 130px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+    header{
+        background-color: #ffe4c4;
+        width: 100%;
+        height: 130px;
+        display: flex;
+        position: sticky;
+        top: 0px;
+        .logo{
+            margin-left: 50px;
+            margin-top: 10px;
+            width: 230px;
+        }
+        nav{
+            width: 100%;
+        }
+        .navBar{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            margin-right: 15px;
+            li{
+                list-style: none;
+                font-size: 2.5rem;
+                font-family: "Lobster";
+                margin: 15px;
+                a{
+                    text-decoration: none;
+                    color: #1c0c04;
+                    &:hover{
+                        color: #7a4518;
+                    }
+                }
+            }
+        }
+    }
+    .imgNosotros{
+        width: 550px;
+        margin: 3rem;
+    }
+    .imgBarberia{
+        width: 600px;
+    }
+    .imgEquipo{
+        width: 600px;
+    }
+    .logo {
+        margin-left: 0px;
+        width: 230px;
+    }
+    .navBar {
+        padding: 4rem 0rem 2rem 2rem;
+        font-size: 2.5rem;
+    }
+    .sectionServicios {
+        background-color: #7a4518;
+        width: 100%;
+        height: 950px;
+        padding: 5rem 5rem 0rem 8rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .sectionTurno {
+        background-color: #1c0c04;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .formTurnos {
+        text-align: center;
+        background-color: #7a4518;
+        width: 600px;
+        height: 350px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 120px 120px 50px;
+        margin: 2.5rem 0rem 0rem 0rem;
+    }
+    .boxContacto {
+        background-color: #1c0c04;
+        width: 100%;
+        height: 920px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .casillaText {
+        background-color: #ffe4c4;
+        font-family: "Merriweather";
+        font-size: 1.5rem;
+        border: solid 2px #7a4518;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        width: 400px;
+    }
+    .gridForm {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-right: 3rem;
+    }
+    .hContactanos {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        margin-left: 0px;
+    }
+    .marginBoton {
+        margin-top: 40px;
+        margin-left: 170px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .containerGrid{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 130px 1fr 130px;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";
+    }
+}

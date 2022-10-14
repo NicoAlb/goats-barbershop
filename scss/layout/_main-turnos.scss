@@ -1,0 +1,147 @@
+.sectionTurno {
+    background-color: #1c0c04;
+    width: 100%;
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sectionHorarios {
+    text-align: center;
+    background-color: #7a4518;
+    width: 300px;
+    padding: 2rem 1rem;
+    margin: 4rem 0rem 4rem 6rem;
+}
+
+.textSoloCentrado {
+    text-align: center;
+}
+
+.formTurnos {
+    text-align: center;
+    background-color: #7a4518;
+    width: 600px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 120px 120px 50px;
+    padding: 4rem 4rem;
+    margin: 4rem 4rem 4rem 15rem;
+}
+
+.elegiBarbero {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    .selectBarbero {
+        background-color: #ffe4c4;
+        width: 150px;
+        height: 30px;
+        font-size: 1.5rem;
+        font-family: "Merriweather";
+        border: solid 2px #7a4518;
+        margin-top: 15px;
+    }
+}
+
+.elegiHorario {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    .selectHorario {
+        background-color: #ffe4c4;
+        width: 170px;
+        height: 30px;
+        font-size: 1.5rem;
+        font-family: "Merriweather";
+        border: solid 2px #7a4518;
+        margin-top: 15px;
+    }
+}
+
+.correoElectronico {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    .tuEmail {
+        background-color: #ffe4c4;
+        width: 200px;
+        height: 30px;
+        font-size: 1.5rem;
+        font-family: "Merriweather";
+        border: solid 2px #7a4518;
+        margin-top: 15px;
+    }
+}
+
+.numeroTelefono {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    .tuNumero {
+        background-color: #ffe4c4;
+        width: 130px;
+        height: 30px;
+        font-size: 1.5rem;
+        font-family: "Merriweather";
+        border: solid 2px #7a4518;
+        margin-top: 15px;
+    }
+}
+
+.gridBotonDisp {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    .botonDisponibilidad {
+        width: 200px;
+        height: 35px;
+        font-family: "Merriweather";
+        font-size: 1.5rem;
+        background-color: #1c0c04;
+        color: #ffe4c4;
+        border-radius: 5px;
+        border: #1c0c04;
+        cursor: pointer;
+        align-items: center;
+        margin-top: 7px;
+    }
+}
+
+.sectionPrecios {
+    background-color: #7a4518;
+    width: 100%;
+    height: 450px;
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    table {
+        font-size: 2rem;
+        font-family: "Merriweather";
+        color: #ffe4c4;
+        width: 100%;
+    }
+    th, td {
+        border: solid 2px #7a4518;
+        background-color: #1c0c04;
+        text-align: center;
+    }
+}

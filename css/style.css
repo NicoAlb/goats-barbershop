@@ -1,428 +1,709 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-@font-face {
-    font-family: "Merriweather";
-    src: url(../fonts/MerriweatherSans-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: "Lobster";
-    src: url(../fonts/Lobster-Regular.ttf);
-}
-
-a {
-    text-decoration: none;
-    color: #1c0c04;
-    padding-right: 20px;
-}
-
-a:hover {
-    color: #7a4518;
-}
-
-p {
-    font-size: 2rem;
-    font-family: "Merriweather";
-    color: bisque;
-}
-
-h1 {
-    font-size: 4.5rem;
-    font-family: "Lobster";
-    color: bisque;
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
 h2 {
-    font-size: 3rem;
-    font-family: "Merriweather";
-    color: bisque;
-}
+  font-size: 3rem;
+  font-family: "Merriweather";
+  color: #ffe4c4; }
 
 h3 {
-    font-size: 2.5rem;
-    font-family: "Merriweather";
-    color: bisque;
-}
+  font-size: 2.5rem;
+  font-family: "Merriweather";
+  color: #ffe4c4; }
 
 h4 {
-    font-size: 2rem;
-    font-family: "Merriweather";
-    color: bisque;
-}
+  font-size: 2rem;
+  font-family: "Merriweather";
+  color: #ffe4c4; }
 
-table {
-    font-size: 2rem;
-    font-family: "Merriweather";
-    color: bisque;
-    width: 100%;
-}
-
-th, td {
-    border: solid 3px #1c0c04;
-    background-color: #1c0c04;
-    text-align: center;
-}
+p {
+  font-size: 2rem;
+  font-family: "Merriweather";
+  color: #ffe4c4; }
 
 form {
-    font-size: 2.5rem;
-    font-family: "Merriweather";
-    color: bisque;
-}
+  font-size: 2.5rem;
+  font-family: "Merriweather";
+  color: #ffe4c4; }
 
-footer nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 4rem 4rem;
-    padding-right: 50px;
-    height: 130px;
-    width: 100%;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-footer {
-    background-color: bisque;
-}
+html {
+  font-size: 62.5%; }
 
-nav p {
-    color: #1c0c04;
-}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/MerriweatherSans-VariableFont_wght.ttf); }
 
+@font-face {
+  font-family: "Lobster";
+  src: url(../fonts/Lobster-Regular.ttf); }
+
+/*header*/
 header {
-    background-color: bisque;
-    padding: 1rem 2rem 2rem 5rem;
-    max-width: 100%;
-    height: 130px;
+  background-color: #ffe4c4;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  position: sticky;
+  top: 0px; }
+  header .logo {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 230px; }
+  header nav {
+    width: 100%; }
+  header .navBar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: sticky;
-    top: 0px;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 15px; }
+    header .navBar li {
+      list-style: none;
+      font-size: 4rem;
+      font-family: "Lobster";
+      margin: 20px; }
+      header .navBar li a {
+        text-decoration: none;
+        color: #1c0c04; }
+        header .navBar li a:hover {
+          color: #7a4518; }
+
+/*Index*/
+.banner {
+  background-image: url(../assets/img/banner.jpg);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; }
+  .banner h1 {
     font-size: 4rem;
     font-family: "Lobster";
-}
+    color: #ffe4c4;
+    grid-column: 2/3;
+    grid-row: 2/3; }
 
-/*CLASES*/
-
-.navBar {
-    padding: 2.5rem 5rem 2rem 2rem;
-    font-size: 4rem;
-}
-
-.logo {
-    margin-left: 20px;
-    width: 230px;
-}
-
-.banner {
-    background-image: url(../assets/img/banner.jpg);
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(3,1fr);
-    justify-items: center;
-    align-items: center;
-}
-
-.sectionOsc {
-    background-color: #1c0c04;
-    padding: 5rem 5rem;
-}
-
-.sectionCla {
-    background-color: #7a4518;
-    padding: 5rem 5rem;
-}
-
-.sectionClara {
-    background-color: #7a4518;
-    width: 100%;
-    padding: 5rem 5rem;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.sectionServicios {
-    background-color: #7a4518;
-    width: 100%;
-    padding: 5rem 5rem;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.sectionOscura {
-    background-color: #1c0c04;
-    width: 100%;
-    padding: 5rem 5rem;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.modeloClaro {
-    background-color: #7a4518;
-    padding: 5rem 5rem;
-    text-align: center;
-}
-
-.modeloOscuro {
-    background-color: #1c0c04;
-    padding: 5rem 5rem;
-    text-align: center;
-}
+.sectionBarberia {
+  background-color: #7a4518;
+  width: 100%;
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .sectionBarberia .textBarberia {
+    margin-top: 15px; }
 
 .imgBarberia {
-    padding: 1rem 1rem;
-    margin-top: 15px;
-    width: 550px;
-}
+  padding: 1rem 1rem;
+  margin-top: 15px;
+  width: 550px; }
 
-.textBarberia {
-    margin-top: 15px;
-}
+.sectionEquipo {
+  background-color: #1c0c04;
+  width: 100%;
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .sectionEquipo .textEquipo {
+    margin-top: 50px; }
 
 .imgEquipo {
-    padding: 1rem 1rem;
-    margin-top: 15px;
-    width: 550px;
-}
+  padding: 1rem 1rem;
+  margin-top: 15px;
+  width: 550px; }
 
-.textEquipo {
-    margin-top: 50px;
-}
-
-.imgNosotros {
-    width: 400px;
-}
-
-.sectionMap {
-    background-color: #1c0c04;
-    padding: 5rem 5rem;
-}
-
-.tituloMap {
-    text-align: left;
-    padding: 1rem 0rem 5rem 1rem;
-}
-
-.map {
-    text-align: center;
-}
-
-.botonReservaTurno {
+.sectionServicios {
+  background-color: #7a4518;
+  width: 100%;
+  padding: 5rem 5rem 5rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .sectionServicios .botonReservaTurno {
     width: 150px;
     height: 35px;
     font-family: "Merriweather";
     font-size: 1.5rem;
     background-color: #1c0c04;
-    color: bisque;
+    color: #ffe4c4;
     border-radius: 5px;
     border: #1c0c04;
     cursor: pointer;
-    margin-top: 30px;
-}
+    margin-top: 30px; }
 
-.botonDisponibilidad {
+.sectionMap {
+  background-color: #1c0c04;
+  padding: 5rem 5rem; }
+  .sectionMap .tituloMap {
+    text-align: left;
+    padding: 1rem 0rem 5rem 1rem; }
+  .sectionMap .map {
+    text-align: center; }
+
+/*Nosotros*/
+.sectionNicolas {
+  background-color: #1c0c04;
+  width: 100%;
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.imgNosotros {
+  width: 400px; }
+
+.sectionEnzo {
+  background-color: #7a4518;
+  width: 100%;
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.imgNosotros {
+  width: 400px; }
+
+.sectionJulian {
+  background-color: #1c0c04;
+  width: 100%;
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.imgNosotros {
+  width: 400px; }
+
+/*Modelos*/
+.modeloOscuro {
+  background-color: #1c0c04;
+  padding: 5rem 5rem;
+  text-align: center; }
+
+.modeloClaro {
+  background-color: #7a4518;
+  padding: 5rem 5rem;
+  text-align: center; }
+
+/*Turnos*/
+.sectionTurno {
+  background-color: #1c0c04;
+  width: 100%;
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.sectionHorarios {
+  text-align: center;
+  background-color: #7a4518;
+  width: 300px;
+  padding: 2rem 1rem;
+  margin: 4rem 0rem 4rem 6rem; }
+
+.textSoloCentrado {
+  text-align: center; }
+
+.formTurnos {
+  text-align: center;
+  background-color: #7a4518;
+  width: 600px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 120px 120px 50px;
+  padding: 4rem 4rem;
+  margin: 4rem 4rem 4rem 15rem; }
+
+.elegiBarbero {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  grid-column: 1/2;
+  grid-row: 1/2; }
+  .elegiBarbero .selectBarbero {
+    background-color: #ffe4c4;
+    width: 150px;
+    height: 30px;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+    border: solid 2px #7a4518;
+    margin-top: 15px; }
+
+.elegiHorario {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  grid-column: 2/3;
+  grid-row: 1/2; }
+  .elegiHorario .selectHorario {
+    background-color: #ffe4c4;
+    width: 170px;
+    height: 30px;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+    border: solid 2px #7a4518;
+    margin-top: 15px; }
+
+.correoElectronico {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  grid-column: 1/2;
+  grid-row: 2/3; }
+  .correoElectronico .tuEmail {
+    background-color: #ffe4c4;
+    width: 200px;
+    height: 30px;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+    border: solid 2px #7a4518;
+    margin-top: 15px; }
+
+.numeroTelefono {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  grid-column: 2/3;
+  grid-row: 2/3; }
+  .numeroTelefono .tuNumero {
+    background-color: #ffe4c4;
+    width: 130px;
+    height: 30px;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+    border: solid 2px #7a4518;
+    margin-top: 15px; }
+
+.gridBotonDisp {
+  grid-column: 1/3;
+  grid-row: 3/4; }
+  .gridBotonDisp .botonDisponibilidad {
     width: 200px;
     height: 35px;
     font-family: "Merriweather";
     font-size: 1.5rem;
     background-color: #1c0c04;
-    color: bisque;
+    color: #ffe4c4;
     border-radius: 5px;
     border: #1c0c04;
     cursor: pointer;
-    margin-top: 35px;
-}
+    align-items: center;
+    margin-top: 7px; }
+
+.sectionPrecios {
+  background-color: #7a4518;
+  width: 100%;
+  height: 450px;
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  .sectionPrecios table {
+    font-size: 2rem;
+    font-family: "Merriweather";
+    color: #ffe4c4;
+    width: 100%; }
+  .sectionPrecios th, .sectionPrecios td {
+    border: solid 2px #7a4518;
+    background-color: #1c0c04;
+    text-align: center; }
+
+/*Contacto*/
+.boxContacto {
+  background-color: #1c0c04;
+  padding: 5rem 5rem;
+  width: auto; }
+
+.hContactanos {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 25px; }
+
+.gridContacto {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-rows: repeat(2);
+  justify-items: left;
+  align-items: top; }
+  .gridContacto .gridForm {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+    .gridContacto .gridForm .casilla {
+      background-color: #ffe4c4;
+      height: 30px;
+      font-size: 1.5rem;
+      font-family: "Merriweather";
+      border: solid 2px #7a4518;
+      margin-bottom: 15px;
+      margin-top: 15px;
+      margin-left: 25px; }
+
+.gridTextArea {
+  grid-column: 2/3;
+  grid-row: 2/3; }
+
+.casillaText {
+  background-color: #ffe4c4;
+  font-family: "Merriweather";
+  font-size: 1.5rem;
+  border: solid 2px #7a4518;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 40px; }
 
 .botonClaro {
-    width: 70px;
-    height: 35px;
-    font-family: "Merriweather";
-    background-color: #7a4518;
-    color: bisque;
-    border-radius: 5px;
-    border: #7a4518;
-    cursor: pointer;
-}
+  width: 70px;
+  height: 35px;
+  font-family: "Merriweather";
+  background-color: #7a4518;
+  color: #ffe4c4;
+  border-radius: 5px;
+  border: #7a4518;
+  cursor: pointer; }
 
-.textCentrado {
+.marginBoton {
+  margin-left: 40px; }
+
+/*Footer*/
+footer nav {
+  background-color: #ffe4c4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4rem 4rem 4rem;
+  height: 130px;
+  width: 100%; }
+  footer nav .copyright {
+    color: #1c0c04; }
+  footer nav a svg {
+    width: 40px;
+    height: 40px;
+    fill: #1c0c04;
+    margin: 15px; }
+    footer nav a svg:hover {
+      transform: scale(1.2, 1.2);
+      fill: #7a4518; }
+
+/*Grids*/
+.containerGrid {
+  display: grid; }
+
+.gridHeader {
+  grid-area: header; }
+
+.gridMain {
+  grid-area: main; }
+
+.gridFooter {
+  grid-area: footer; }
+
+/*media queries*/
+@media only screen and (max-width: 576px) {
+  .containerGrid {
+    grid-template-columns: 100%;
+    grid-template-rows: 180px 1fr 130px;
+    grid-template-areas: "header" "main" "footer"; }
+  .banner {
+    background-image: url(../assets/img/banner.jpg);
+    height: 73vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center; }
+  .imgNosotros {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .imgBarberia {
+    width: 100%; }
+  .imgEquipo {
+    width: 100%; }
+  header {
+    background-color: #ffe4c4;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0px; }
+    header .logo {
+      margin-left: 75px;
+      margin-top: 10px;
+      width: 230px; }
+    header nav {
+      width: 100%; }
+    header .navBar {
+      display: flex;
+      align-items: center; }
+      header .navBar li {
+        list-style: none;
+        font-size: 2rem;
+        font-family: "Lobster";
+        margin: 10px;
+        padding-right: 5px; }
+        header .navBar li a {
+          text-decoration: none;
+          color: #1c0c04; }
+          header .navBar li a:hover {
+            color: #7a4518; }
+  .sectionServicios {
+    background-color: #7a4518;
+    width: 100%;
+    height: 1400px;
+    padding: 5rem 5rem 0rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  footer nav {
+    background-color: #ffe4c4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-items: center;
+    padding: 4rem 4rem 4rem 4rem;
+    height: 180px;
+    width: 100%; }
+  .sectionTurno {
+    background-color: #1c0c04;
+    width: 100%;
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center; }
+  .sectionHorarios {
     text-align: center;
     background-color: #7a4518;
     width: 300px;
-    padding: 2rem 1rem;
-    margin: 4rem 0rem 4rem 6rem;
-}
-
-.textSoloCentrado {
-    text-align: center;
-}
-
-.formTurnos {
-    text-align: center;
+    margin: 3rem; }
+  .formTurnos {
     background-color: #7a4518;
-    width: 450px;
-    padding: 7rem 4rem;
-    margin: 4rem 0rem 4rem 15rem;
-}
-
-.boxContacto {
-    background-color: #1c0c04;
-    padding: 5rem 5rem;
-    width: auto;
-}
-
-.hContactanos {
-    margin-top: 10px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-}
-
-.casilla {
-    background-color: bisque;
+    width: 300px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 120px 120px 120px 50px;
+    padding: 4rem 4rem;
+    margin: 0px;
+    margin-top: 30px; }
+  .elegiBarbero {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .selectBarbero {
+    background-color: #ffe4c4;
+    width: 150px;
     height: 30px;
     font-size: 1.5rem;
     font-family: "Merriweather";
     border: solid 2px #7a4518;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-left: 25px;
-}
-
-.casillaText {
-    background-color: bisque;
+    margin-top: 15px; }
+  .elegiHorario {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .selectHorario {
+    background-color: #ffe4c4;
+    width: 170px;
+    height: 30px;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+    border: solid 2px #7a4518;
+    margin-top: 15px; }
+  .correoElectronico {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .tuEmail {
+    background-color: #ffe4c4;
+    width: 200px;
+    height: 30px;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+    border: solid 2px #7a4518;
+    margin-top: 15px; }
+  .numeroTelefono {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 1/2;
+    grid-row: 4/5; }
+  .tuNumero {
+    background-color: #ffe4c4;
+    width: 130px;
+    height: 30px;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+    border: solid 2px #7a4518;
+    margin-top: 15px; }
+  .gridBotonDisp {
+    grid-column: 1/2;
+    grid-row: 5/6; }
+  .sectionPrecios {
+    background-color: #7a4518;
+    text-align: center;
+    width: 100%;
+    height: 750px;
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+  .boxContacto {
+    background-color: #1c0c04;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .casillaText {
+    background-color: #ffe4c4;
     font-family: "Merriweather";
     font-size: 1.5rem;
     border: solid 2px #7a4518;
     margin-top: 15px;
     margin-bottom: 10px;
-    margin-left: 40px;
-}
-
-.marginBoton {
-    margin-left: 40px;
-}
-
-/*GRIDS*/
-
-.containerGrid {
-    display: grid;
-}
-
-.gridHeader {
-    grid-area: header;
-}
-
-.gridMain {
-    grid-area: main;
-}
-
-.gridFooter {
-    grid-area: footer;
-}
-
-.gridContacto {
-    display: grid;
-    grid-template-columns: 0.5fr 2fr;
-    grid-template-rows: repeat(2);
-    justify-items: left;
-    align-items: top;
-}
-
-.gridForm {
+    margin-left: 0px;
+    width: 200px; }
+  .gridForm {
     grid-column: 1/2;
     grid-row: 2/3;
-}
+    padding-right: 3rem; }
+  .hContactanos {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 0px; }
+  .marginBoton {
+    margin-top: 20px;
+    margin-left: 70px; } }
 
-.gridTextArea {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-/*media queries*/
-
-@media only screen and (max-width: 420px){
-    .containerGrid{
-        grid-template-columns: 100%;
-        grid-template-rows: 180px 1fr 130px;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    }
-    .imgNosotros{
-        width: 100%;
-    }
-    .imgBarberia{
-        width: 100%;
-    }
-    .imgEquipo{
-        width: 100%;
-    }
-    header {
-        background-color: bisque;
-        padding: 1rem 2rem 2rem 5rem;
-        max-width: 100%;
-        height: 180px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        position: sticky;
-        top: 0px;
-        font-family: "Lobster";
-    }
-    .navBar {
-        padding: 1rem 0rem 2rem 0rem;
-        font-size: 1.6rem;
-    }
-}
-
-@media only screen and (min-width: 421px) and (max-width: 1199px) {
-    .containerGrid{
-        grid-template-columns: 100%;
-        grid-template-rows: 130px 1fr 130px;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    }
-    .imgNosotros{
-        width: 100%;
-    }
-    .imgBarberia{
-        width: 100%;
-    }
-    .imgEquipo{
-        width: 100%;
-    }
-    .logo {
-        margin-left: 0px;
-        width: 230px;
-    }
-    .navBar {
-        padding: 4rem 0rem 2rem 2rem;
+@media only screen and (min-width: 577px) and (max-width: 1199px) {
+  .containerGrid {
+    grid-template-columns: 100%;
+    grid-template-rows: 130px 1fr 130px;
+    grid-template-areas: "header" "main" "footer"; }
+  header {
+    background-color: #ffe4c4;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    position: sticky;
+    top: 0px; }
+    header .logo {
+      margin-left: 50px;
+      margin-top: 10px;
+      width: 230px; }
+    header nav {
+      width: 100%; }
+    header .navBar {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+      margin-right: 15px; }
+      header .navBar li {
+        list-style: none;
         font-size: 2.5rem;
-    }
-}
+        font-family: "Lobster";
+        margin: 15px; }
+        header .navBar li a {
+          text-decoration: none;
+          color: #1c0c04; }
+          header .navBar li a:hover {
+            color: #7a4518; }
+  .imgNosotros {
+    width: 550px;
+    margin: 3rem; }
+  .imgBarberia {
+    width: 600px; }
+  .imgEquipo {
+    width: 600px; }
+  .logo {
+    margin-left: 0px;
+    width: 230px; }
+  .navBar {
+    padding: 4rem 0rem 2rem 2rem;
+    font-size: 2.5rem; }
+  .sectionServicios {
+    background-color: #7a4518;
+    width: 100%;
+    height: 950px;
+    padding: 5rem 5rem 0rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .sectionTurno {
+    background-color: #1c0c04;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center; }
+  .formTurnos {
+    text-align: center;
+    background-color: #7a4518;
+    width: 600px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 120px 120px 50px;
+    margin: 2.5rem 0rem 0rem 0rem; }
+  .boxContacto {
+    background-color: #1c0c04;
+    width: 100%;
+    height: 920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .casillaText {
+    background-color: #ffe4c4;
+    font-family: "Merriweather";
+    font-size: 1.5rem;
+    border: solid 2px #7a4518;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    width: 400px; }
+  .gridForm {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-right: 3rem; }
+  .hContactanos {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 0px; }
+  .marginBoton {
+    margin-top: 40px;
+    margin-left: 170px; } }
 
-@media only screen and (min-width: 1200px){
-    .containerGrid{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 130px 1fr 130px;
-        grid-template-areas:
-            "header header header"
-            "main main main"
-            "footer footer footer";
-    }
-}
+@media only screen and (min-width: 1200px) {
+  .containerGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 130px 1fr 130px;
+    grid-template-areas: "header header header" "main main main" "footer footer footer"; } }

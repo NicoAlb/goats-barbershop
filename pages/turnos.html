@@ -8,26 +8,29 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
     <title>Turnos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <div>
-            <a href="../index.html"><img src="../assets/img/logogoatsfinal.png" width="230"></a>
+            <a href="../index.html"><img class="logo" src="../assets/img/logogoatsfinal.png"></a>
         </div>
-        <nav class="navBar">
-            <a href="../pages/nosotros.html">Nosotros</a>
-            <a href="../pages/modelos.html">Modelos</a>
-            <a href="../pages/turnos.html">Turnos</a>
-            <a href="../pages/contacto.html">Contacto</a>
+        <nav>
+            <ul class="navBar">
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/modelos.html">Modelos</a></li>
+                <li><a href="../pages/turnos.html">Turnos</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="sectionOscura">
+        <section class="sectionTurno">
             <div>
                 <h2>¡Reservá tu turno con nosotros!</h2>
                 <br>
-                <article class="textCentrado">
+                <article class="sectionHorarios">
                     <h3>Horarios de atención</h3>
                     <br>
                     <h4>Lunes a Viernes</h4>
@@ -43,35 +46,35 @@
                 </article>
             </div>
             <br>
-            <div class="formTurnos">
-                <form>
-                    <div>
+            <div>
+                <form class="formTurnos">
+                    <div class="elegiBarbero">
                         <label for="barbero">Elegí tu barbero</label>
-                        <select name="barbero" id="barbero">
+                        <select class="selectBarbero" name="barbero" id="barbero">
                             <option value="nicolasGodoy">Nicolás Godoy</option>
                             <option value="enzoDiaz">Enzo Diaz</option>
                             <option value="julianBlanco">Julián Blanco</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="elegiHorario">
                         <label for="diaHora">Elegí día y hora</label>
-                        <input type="datetime-local" id="diaHora" name="diaHora">
+                        <input class="selectHorario" type="datetime-local" id="diaHora" name="diaHora">
                     </div>
-                    <div>
+                    <div class="correoElectronico">
                         <label for="email">Tu correo electrónico</label>
-                        <input type="email" id="email" name="email" placeholder="example@example.com">
+                        <input class="tuEmail" type="email" id="email" name="email" placeholder="  example@example.com  ">
                     </div>
-                    <div>
+                    <div class="numeroTelefono">
                         <label for="numeroDeTelefono">Tu número de telefono</label>
-                        <input type="tel" id="numeroDeTelefono" name="numeroDeTelefono" placeholder="0000000000">
+                        <input class="tuNumero" type="tel" id="numeroDeTelefono" name="numeroDeTelefono" placeholder="  0000000000">
                     </div>
-                    <div>
+                    <div class="gridBotonDisp">
                         <input class="botonDisponibilidad" type="submit" value="Consultá disponibilidad">
                     </div>
                 </form>
             </div>
         </section>
-        <section class="sectionCla">
+        <section class="sectionPrecios">
             <h2>Nuestra lista de precios</h2>
             <br>
             <table>
@@ -117,7 +120,7 @@
     <footer>
         <nav>
             <article>
-                <p>Copyright 2022</p>
+                <p class="copyright">Copyright 2022</p>
             </article>
             <!--iconos rrss-->
             <article>
@@ -134,5 +137,7 @@
             </article>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
