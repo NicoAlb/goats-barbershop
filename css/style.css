@@ -23,6 +23,9 @@ form {
   font-family: "Merriweather";
   color: #ffe4c4; }
 
+.interlineado {
+  margin-top: 2rem; }
+
 * {
   margin: 0;
   padding: 0;
@@ -85,14 +88,14 @@ header {
     grid-column: 2/3;
     grid-row: 2/3; }
 
-.sectionBarberia {
+.sectionBarberia, .sectionServicios {
   background-color: #7a4518;
   width: 100%;
   padding: 5rem 5rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
-  .sectionBarberia .textBarberia {
+  .sectionBarberia .textBarberia, .sectionServicios .textBarberia {
     margin-top: 15px; }
 
 .imgBarberia {
@@ -115,24 +118,17 @@ header {
   margin-top: 15px;
   width: 550px; }
 
-.sectionServicios {
-  background-color: #7a4518;
-  width: 100%;
-  padding: 5rem 5rem 5rem 4rem;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-  .sectionServicios .botonReservaTurno {
-    width: 150px;
-    height: 35px;
-    font-family: "Merriweather";
-    font-size: 1.5rem;
-    background-color: #1c0c04;
-    color: #ffe4c4;
-    border-radius: 5px;
-    border: #1c0c04;
-    cursor: pointer;
-    margin-top: 30px; }
+.sectionServicios .botonReservaTurno {
+  width: 150px;
+  height: 35px;
+  font-family: "Merriweather";
+  font-size: 1.5rem;
+  background-color: #1c0c04;
+  color: #ffe4c4;
+  border-radius: 5px;
+  border: #1c0c04;
+  cursor: pointer;
+  margin-top: 30px; }
 
 .sectionMap {
   background-color: #1c0c04;

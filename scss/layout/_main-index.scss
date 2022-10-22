@@ -8,15 +8,15 @@
     align-items: center;
     h1 {
         font-size: 4rem;
-        font-family: "Lobster";
-        color: #ffe4c4;
+        font-family: $fuente-principal;
+        color: $color-principal;
         grid-column: 2/3;
         grid-row: 2/3;
     }
 }
 
 .sectionBarberia {
-    background-color: #7a4518;
+    background-color: $background-1;
     width: 100%;
     padding: 5rem 5rem;
     display: flex;
@@ -34,7 +34,7 @@
 }
 
 .sectionEquipo {
-    background-color: #1c0c04;
+    background-color: $background-2;
     width: 100%;
     padding: 5rem 5rem;
     display: flex;
@@ -52,28 +52,23 @@
 }
 
 .sectionServicios {
-    background-color: #7a4518;
-    width: 100%;
-    padding: 5rem 5rem 5rem 4rem;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    @extend .sectionBarberia;
     .botonReservaTurno {
         width: 150px;
         height: 35px;
-        font-family: "Merriweather";
+        font-family: $fuente-secundaria;
         font-size: 1.5rem;
-        background-color: #1c0c04;
-        color: #ffe4c4;
+        background-color: $background-2;
+        color: $color-principal;
         border-radius: 5px;
-        border: #1c0c04;
+        border: $color-2;
         cursor: pointer;
         margin-top: 30px;
     }
 }
 
 .sectionMap {
-    background-color: #1c0c04;
+    background-color: $background-2;
     padding: 5rem 5rem;
     .tituloMap {
         text-align: left;

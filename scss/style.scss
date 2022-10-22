@@ -28,6 +28,12 @@ form {
     color: #ffe4c4;
 }
 
+.interlineado {
+    margin-top: 2rem;
+}
+
+@import "./utilities/variables";
+
 @import "./base/reset";
 
 @import "./base/tipografias";

@@ -1,5 +1,5 @@
 .sectionTurno {
-    background-color: #1c0c04;
+    background-color: $background-2;
     width: 100%;
     padding: 5rem 5rem;
     display: flex;
@@ -9,7 +9,7 @@
 
 .sectionHorarios {
     text-align: center;
-    background-color: #7a4518;
+    background-color: $background-1;
     width: 300px;
     padding: 2rem 1rem;
     margin: 4rem 0rem 4rem 6rem;
@@ -21,7 +21,7 @@
 
 .formTurnos {
     text-align: center;
-    background-color: #7a4518;
+    background-color: $background-1;
     width: 600px;
     height: 350px;
     display: grid;
@@ -40,12 +40,12 @@
     grid-column: 1/2;
     grid-row: 1/2;
     .selectBarbero {
-        background-color: #ffe4c4;
+        background-color: $color-principal;
         width: 150px;
         height: 30px;
         font-size: 1.5rem;
-        font-family: "Merriweather";
-        border: solid 2px #7a4518;
+        font-family: $fuente-secundaria;
+        border: solid 2px $color-1;
         margin-top: 15px;
     }
 }
@@ -59,12 +59,12 @@
     grid-column: 2/3;
     grid-row: 1/2;
     .selectHorario {
-        background-color: #ffe4c4;
+        background-color: $color-principal;
         width: 170px;
         height: 30px;
         font-size: 1.5rem;
-        font-family: "Merriweather";
-        border: solid 2px #7a4518;
+        font-family: $fuente-secundaria;
+        border: solid 2px $color-1;
         margin-top: 15px;
     }
 }
@@ -78,12 +78,12 @@
     grid-column: 1/2;
     grid-row: 2/3;
     .tuEmail {
-        background-color: #ffe4c4;
+        background-color: $color-principal;
         width: 200px;
         height: 30px;
         font-size: 1.5rem;
-        font-family: "Merriweather";
-        border: solid 2px #7a4518;
+        font-family: $fuente-secundaria;
+        border: solid 2px $color-1;
         margin-top: 15px;
     }
 }
@@ -97,12 +97,12 @@
     grid-column: 2/3;
     grid-row: 2/3;
     .tuNumero {
-        background-color: #ffe4c4;
+        background-color: $color-principal;
         width: 130px;
         height: 30px;
         font-size: 1.5rem;
-        font-family: "Merriweather";
-        border: solid 2px #7a4518;
+        font-family: $fuente-secundaria;
+        border: solid 2px $color-1;
         margin-top: 15px;
     }
 }
@@ -113,12 +113,12 @@
     .botonDisponibilidad {
         width: 200px;
         height: 35px;
-        font-family: "Merriweather";
+        font-family: $fuente-secundaria;
         font-size: 1.5rem;
-        background-color: #1c0c04;
-        color: #ffe4c4;
+        background-color: $background-2;
+        color: $color-principal;
         border-radius: 5px;
-        border: #1c0c04;
+        border: $color-2;
         cursor: pointer;
         align-items: center;
         margin-top: 7px;
@@ -126,7 +126,7 @@
 }
 
 .sectionPrecios {
-    background-color: #7a4518;
+    background-color: $background-1;
     width: 100%;
     height: 450px;
     padding: 5rem 5rem;
@@ -135,13 +135,13 @@
     flex-direction: column;
     table {
         font-size: 2rem;
-        font-family: "Merriweather";
-        color: #ffe4c4;
+        font-family: $fuente-secundaria;
+        color: $color-principal;
         width: 100%;
     }
     th, td {
-        border: solid 2px #7a4518;
-        background-color: #1c0c04;
+        border: solid 2px $color-1;
+        background-color: $background-2;
         text-align: center;
     }
 }

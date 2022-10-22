@@ -1,5 +1,5 @@
 header{
-    background-color: #ffe4c4;
+    background-color: $background-principal;
     width: 100%;
     height: 130px;
     display: flex;
@@ -21,13 +21,13 @@ header{
         li{
             list-style: none;
             font-size: 4rem;
-            font-family: "Lobster";
+            font-family: $fuente-principal;
             margin: 20px;
             a{
                 text-decoration: none;
-                color: #1c0c04;
+                color: $color-2;
                 &:hover{
-                    color: #7a4518;
+                    color: $color-1;
                 }
             }
         }
