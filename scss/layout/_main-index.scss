@@ -7,11 +7,12 @@
     justify-items: center;
     align-items: center;
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         font-family: $fuente-principal;
         color: $color-principal;
         grid-column: 2/3;
         grid-row: 2/3;
+        width: 100px;
     }
 }
 
@@ -20,16 +21,21 @@
     width: 100%;
     padding: 5rem 5rem;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    .textBarberia {
-        margin-top: 15px;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hBarberia {
+    margin-left: 40px;
+}
+
+.textBarberia {
+    margin-top: 2rem;
+    margin-left: 40px;
 }
 
 .imgBarberia {
     padding: 1rem 1rem;
-    margin-top: 15px;
     width: 550px;
 }
 
@@ -38,17 +44,42 @@
     width: 100%;
     padding: 5rem 5rem;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    .textEquipo {
-        margin-top: 50px;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hEquipo {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.textEquipo {
+    margin-top: 2rem;
+    margin-left: 10px;
+    margin-right: 40px;
 }
 
 .imgEquipo {
     padding: 1rem 1rem;
     margin-top: 15px;
     width: 550px;
+}
+
+.hServicios {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.textServicios {
+    margin-top: 2rem;
+    margin-left: 10px;
+    width: 500px;
+}
+
+.textServiciosRight {
+    margin-top: 2rem;
+    margin-right: 40px;
+    width: 500px;
 }
 
 .sectionServicios {
@@ -64,6 +95,12 @@
         border: $color-2;
         cursor: pointer;
         margin-top: 30px;
+        margin-left: 10px;
+        &:hover{
+            background-color: $background-principal;
+            color: $color-2;
+            transform: scale(1.05, 1.05);
+        }
     }
 }
 

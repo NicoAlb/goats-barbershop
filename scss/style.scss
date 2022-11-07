@@ -28,10 +28,6 @@ form {
     color: #ffe4c4;
 }
 
-.interlineado {
-    margin-top: 2rem;
-}
-
 @import "./utilities/variables";
 
 @import "./base/reset";
@@ -86,26 +82,6 @@ form {
             "main"
             "footer";
     }
-    .banner {
-        background-image: url(../assets/img/banner.jpg);
-        height: 73vh;
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat(3,1fr);
-        justify-items: center;
-        align-items: center;
-    }
-    .imgNosotros{
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .imgBarberia{
-        width: 100%;
-    }
-    .imgEquipo{
-        width: 100%;
-    }
     header{
         background-color: #ffe4c4;
         width: 100%;
@@ -113,9 +89,10 @@ form {
         display: flex;
         flex-direction: column;
         position: sticky;
+        align-items: center;
         top: 0px;
         .logo{
-            margin-left: 75px;
+            margin-left: 0px;
             margin-top: 10px;
             width: 230px;
         }
@@ -124,13 +101,14 @@ form {
         }
         .navBar{
             display: flex;
+            justify-content: space-around;
             align-items: center;
             li{
                 list-style: none;
                 font-size: 2rem;
                 font-family: "Lobster";
                 margin: 10px;
-                padding-right: 5px;
+                padding-right: 0px;
                 a{
                     text-decoration: none;
                     color: #1c0c04;
@@ -141,24 +119,180 @@ form {
             }
         }
     }
+    .banner {
+        background-image: url(../assets/img/banner-mobile.jpg);
+        height: 73vh;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(3,1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .sectionBarberia {
+        background-color: $background-1;
+        width: 100%;
+        padding: 5rem 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hBarberia {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .textBarberia {
+        margin-top: 2rem;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .imgBarberia{
+        width: 100%;
+    }
+    .sectionEquipo {
+        background-color: $background-2;
+        width: 100%;
+        padding: 5rem 5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .hEquipo {
+        margin-top: 0px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .textEquipo {
+        margin-top: 2rem;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .imgEquipo{
+        width: 100%;
+    }
     .sectionServicios {
         background-color: #7a4518;
         width: 100%;
-        height: 1400px;
-        padding: 5rem 5rem 0rem 5rem;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    footer nav {
-        background-color: #ffe4c4;
+        padding: 0rem 5rem;
         display: flex;
         flex-direction: column;
-        flex-wrap: no-wrap;
-        align-items: center;
-        padding: 4rem 4rem 4rem 4rem;
-        height: 180px;
+        flex-wrap: nowrap;
+    }
+    .hServicios {
+        margin-top: 50px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .textServicios {
+        margin-top: 2rem;
+        margin-left: 0px;
+        margin-right: 0px;
         width: 100%;
+        text-align: center;
+    }
+    .textServiciosRight {
+        margin-top: 20px;
+        margin-right: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .containerServiciosRight{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .botonAlineado{
+        text-align: center;
+        margin-top: 0px;
+        margin-left: -10px;
+    }
+    .botonReservaTurno {
+        width: 150px;
+        height: 35px;
+        font-family: $fuente-secundaria;
+        font-size: 1.5rem;
+        background-color: $background-2;
+        color: $color-principal;
+        border-radius: 5px;
+        border: $color-2;
+        cursor: pointer;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .imgNosotros{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .textNicolas {
+        width: 100%;
+        text-align: center;
+        h3 {
+            margin-bottom: 15px;
+        }
+    }
+    .textEnzo {
+        width: 100%;
+        text-align: center;
+        h3 {
+            margin-bottom: 15px;
+        }
+    }
+    .sectionEnzo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .textJulian {
+        width: 100%;
+        text-align: center;
+        h3 {
+            margin-bottom: 15px;
+        }
+    }
+    .modeloOscuro {
+        background-color: $background-2;
+        padding: 5rem 2rem;
+        text-align: center;
+    }
+    .modeloClaro {
+        background-color: $background-1;
+        padding: 5rem 2rem;
+        text-align: center;
+    }
+    .carousel-item {
+        width: 100%;
+        align-content: center;
+    }
+    .carouselIconPrev1 {
+        background-color: $color-2;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin-top: 230px;
+        margin-left: 10px;
+    }
+    .carouselIconNext1 {
+        background-color: $color-2;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin-top: 230px;
+        margin-right: 10px;
+    }
+    .carouselIconPrev2 {
+        background-color: $color-1;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin-top: 230px;
+        margin-left: 10px;
+    }
+    .carouselIconNext2 {
+        background-color: $color-1;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin-top: 230px;
+        margin-right: 10px;
     }
     .sectionTurno {
         background-color: #1c0c04;
@@ -287,13 +421,12 @@ form {
         border: solid 2px #7a4518;
         margin-top: 15px;
         margin-bottom: 10px;
-        margin-left: 0px;
         width: 200px;
     }
     .gridForm {
         grid-column: 1/2;
         grid-row: 2/3;
-        padding-right: 3rem;
+        padding-left: 2rem;
     }
     .hContactanos {
         margin-top: 10px;
@@ -302,7 +435,25 @@ form {
     }
     .marginBoton {
         margin-top: 20px;
-        margin-left: 70px;
+        margin-left: 105px;
+    }
+    .carousel-item {
+        width: 800px;
+        margin-left: -270px;
+        margin-top: 30px;
+    }
+    footer nav {
+        background-color: #ffe4c4;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        align-items: center;
+        padding: 2rem 4rem 4rem 4rem;
+        height: 180px;
+        width: 100%;
+    }
+    a svg {
+        margin-right: 15px;
     }
 }
 
@@ -333,13 +484,12 @@ form {
         .navBar{
             display: flex;
             justify-content: flex-end;
-            margin-top: 10px;
+            margin-top: -10px;
             margin-right: 15px;
             li{
                 list-style: none;
                 font-size: 2.5rem;
                 font-family: "Lobster";
-                margin: 15px;
                 a{
                     text-decoration: none;
                     color: #1c0c04;
@@ -350,15 +500,13 @@ form {
             }
         }
     }
+    .banner {
+        background-image: url(../assets/img/bannerTablet.jpg);
+        height: 700px;
+    }
     .imgNosotros{
         width: 550px;
         margin: 3rem;
-    }
-    .imgBarberia{
-        width: 600px;
-    }
-    .imgEquipo{
-        width: 600px;
     }
     .logo {
         margin-left: 0px;
@@ -368,14 +516,82 @@ form {
         padding: 4rem 0rem 2rem 2rem;
         font-size: 2.5rem;
     }
-    .sectionServicios {
-        background-color: #7a4518;
+    .sectionBarberia {
+        background-color: $background-1;
         width: 100%;
-        height: 950px;
-        padding: 5rem 5rem 0rem 8rem;
+        padding: 5rem 5rem;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        flex-wrap: wrap;
+    }
+    .imgBarberia{
+        width: 600px;
+        margin-left: 60px;
+    }
+    .hBarberia {
+        margin-left: 230px;
+        margin-top: 30px;
+    }
+    .textBarberia {
+        margin-top: 40px;
+        margin-left: 60px;
+        text-align: center;
+        width: 600px;
+    }
+    .sectionEquipo {
+        background-color: $background-2;
+        width: 100%;
+        padding: 5rem 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .imgEquipo{
+        width: 600px;
+        margin-left: 60px;
+    }
+    .hEquipo {
+        margin-left: 300px;
+        margin-top: 30px;
+    }
+    .textEquipo {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        margin-left: 60px;
+        text-align: center;
+        width: 600px;
+    }
+    .sectionServicios {
+        display: flex;
+    }
+    .hServicios {
+        margin-top: 20px;
+        margin-left: 280px;
+    }
+    .textServicios {
+        margin-top: 2rem;
+        margin-left: 50px;
+        width: 600px;
+        text-align: center;
+    }
+    .botonAlineado{
+        margin-left: 260px;
+        margin-bottom: 30px;
+    }
+    .textServiciosRight {
+        margin-top: 20px;
+        margin-left: 100px;
+        width: 500px;
+        text-align: center;
+    }
+    .textNicolas {
+        text-align: center;
+    }
+    .textEnzo {
+        text-align: center;
+    }
+    .textJulian {
+        text-align: center;
     }
     .sectionTurno {
         background-color: #1c0c04;
@@ -403,6 +619,14 @@ form {
         flex-direction: column;
         align-items: center;
     }
+    .gridForm {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 65px;
+        width: 300px;
+    }
     .casillaText {
         background-color: #ffe4c4;
         font-family: "Merriweather";
@@ -410,13 +634,9 @@ form {
         border: solid 2px #7a4518;
         margin-top: 20px;
         margin-bottom: 10px;
-        margin-left: 0px;
+        margin-left: 160px;
         width: 400px;
-    }
-    .gridForm {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        padding-right: 3rem;
+        height: 300px;
     }
     .hContactanos {
         margin-top: 10px;
@@ -425,7 +645,42 @@ form {
     }
     .marginBoton {
         margin-top: 40px;
-        margin-left: 170px;
+        margin-left: 330px;
+    }
+    .carousel-item {
+        margin-top: 20px;
+    }
+    .carouselIconPrev1 {
+        background-color: $color-2;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-top: 230px;
+        margin-left: 10px;
+    }
+    .carouselIconNext1 {
+        background-color: $color-2;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-top: 230px;
+        margin-right: 10px;
+    }
+    .carouselIconPrev2 {
+        background-color: $color-2;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-top: 230px;
+        margin-left: 10px;
+    }
+    .carouselIconNext2 {
+        background-color: $color-2;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-top: 230px;
+        margin-right: 10px;
     }
 }
 
@@ -437,5 +692,10 @@ form {
             "header header header"
             "main main main"
             "footer footer footer";
+    }
+    .carousel-item {
+        width: 800px;
+        margin-left: 220px;
+        margin-top: 30px;
     }
 }
