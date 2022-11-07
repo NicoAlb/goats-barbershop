@@ -56,6 +56,7 @@
     color: $color-principal;
     border-radius: 5px;
     border: $color-1;
+    margin-left: 40px;
     cursor: pointer;
     &:hover{
         background-color: $background-principal;
@@ -65,5 +66,5 @@
 }
 
 .marginBoton {
-    margin-left: 40px;
+    
 }

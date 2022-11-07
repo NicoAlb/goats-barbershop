@@ -474,14 +474,12 @@ header {
   color: #ffe4c4;
   border-radius: 5px;
   border: #7a4518;
+  margin-left: 40px;
   cursor: pointer; }
   .botonClaro:hover {
     background-color: #ffe4c4;
     color: #1c0c04;
     transform: scale(1.05, 1.05); }
-
-.marginBoton {
-  margin-left: 40px; }
 
 /*Footer*/
 footer nav {
@@ -820,7 +818,7 @@ footer nav {
     margin-top: 10px;
     margin-bottom: 25px;
     margin-left: 0px; }
-  .marginBoton {
+  .botonClaro {
     margin-top: 20px;
     margin-left: 105px; }
   .carousel-item {
