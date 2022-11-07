@@ -457,7 +457,7 @@ form {
     }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 1199px) {
+@media only screen and (min-width: 540px) and (max-width: 1199px) {
     .containerGrid{
         grid-template-columns: 100%;
         grid-template-rows: 130px 1fr 130px;
@@ -643,7 +643,7 @@ form {
         margin-bottom: 25px;
         margin-left: 0px;
     }
-    .marginBoton {
+    .botonClaro {
         margin-top: 40px;
         margin-left: 330px;
     }
