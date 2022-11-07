@@ -475,6 +475,10 @@ header {
   border-radius: 5px;
   border: #7a4518;
   cursor: pointer; }
+  .botonClaro:hover {
+    background-color: #ffe4c4;
+    color: #1c0c04;
+    transform: scale(1.05, 1.05); }
 
 .marginBoton {
   margin-left: 40px; }
