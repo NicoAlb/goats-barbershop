@@ -29,11 +29,12 @@ form {
 }
 
 body::-webkit-scrollbar {
-    background-color: #ffd5a3;
+    background-color: #ffe4c4;
     width: 15px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-image: url(../assets/img/scrollbar.png);
+    background-color: #1c0c04;
     border-radius: 100px;
+    border: 3px solid #ffe4c4;
 }
